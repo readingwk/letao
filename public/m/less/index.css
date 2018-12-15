@@ -1,0 +1,157 @@
+li {
+  list-style: none;
+}
+body {
+  padding: 0.45rem 0;
+  background-color: #fff;
+  height: 100vh;
+}
+img {
+  /* 解决图标3px的问题 */
+  vertical-align: middle;
+}
+#main {
+  height: 100%;
+  position: relative;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+#header {
+  background-color: #006699;
+  height: 0.45rem;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  padding: 0 0.45rem;
+  text-align: center;
+}
+#header h4 {
+  line-height: 0.45rem;
+  font-weight: normal;
+  color: #fff;
+  margin: 0;
+}
+#header a {
+  position: absolute;
+  width: 0.45rem;
+  height: 0.45rem;
+  right: 0;
+  top: 0;
+  line-height: 0.45rem;
+  color: #fff;
+}
+#nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: .1rem;
+}
+#nav ul li {
+  width: 33.33%;
+}
+#nav ul li a {
+  display: block;
+}
+#nav ul li a img {
+  width: 100%;
+}
+#banner {
+  display: flex;
+  padding: 0 0.1rem;
+}
+#banner .banner-left {
+  width: 2.3667rem;
+  height: 2.4rem;
+}
+#banner .banner-left a {
+  display: flex;
+}
+#banner .banner-left a img {
+  width: 50%;
+  height: 1.2rem;
+}
+#banner .banner-right {
+  width: 1.1833rem;
+  height: 2.4rem;
+}
+#banner .banner-right a {
+  display: block;
+}
+#banner .banner-right a img {
+  width: 100%;
+  height: 2.4rem;
+}
+#brand {
+  padding: 0.1rem;
+}
+#brand .brand-title a {
+  display: block;
+}
+#brand .brand-title a img {
+  width: 100%;
+}
+#brand .brand-content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#brand .brand-content ul li {
+  width: 25%;
+}
+#brand .brand-content ul li a {
+  display: block;
+}
+#brand .brand-content ul li a img {
+  width: 100%;
+}
+#sport,
+#women,
+#man {
+  padding: 0.1rem;
+}
+#sport .title a,
+#women .title a,
+#man .title a {
+  display: block;
+}
+#sport .title a img,
+#women .title a img,
+#man .title a img {
+  width: 100%;
+}
+#sport .content ul,
+#women .content ul,
+#man .content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#sport .content ul li,
+#women .content ul li,
+#man .content ul li {
+  width: 50%;
+  padding: 0 0.05rem;
+}
+#sport .content ul li a.product,
+#women .content ul li a.product,
+#man .content ul li a.product {
+  margin-top: .1rem;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 0.02px hotpink;
+  overflow: hidden;
+  display: block;
+}
+#sport .content ul li a.product .product-img,
+#women .content ul li a.product .product-img,
+#man .content ul li a.product .product-img {
+  width: 100%;
+}
+#sport .content ul li a.product .product-name,
+#women .content ul li a.product .product-name,
+#man .content ul li a.product .product-name {
+  height: 0.28rem;
+  overflow: hidden;
+  line-height: .14rem;
+}

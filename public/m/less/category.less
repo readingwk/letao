@@ -1,0 +1,60 @@
+@import 'base.less';
+
+
+#main{
+    background-color: #ccc;
+    display: flex;
+    .category-left{
+        position: relative;
+        width: .8rem;
+        ul{
+           
+            min-height: 5.78rem;
+            li{
+                &.active{
+                    a{
+                        background-color: #ccc;
+                    }
+                }
+                a{
+                    display: block;
+                    text-align: center;
+                    height: .45rem;
+                    line-height: .45rem;
+                    font-size: .14rem;
+                    color: #666;
+                    border-bottom: 1px solid #ccc;
+                    background-color: #fff;
+
+                }   
+            }
+        }
+    }
+    .category-right{
+        flex: 1;
+        position: relative;
+        ul{
+            min-height: 5.78rem;
+            display: flex;
+            flex-wrap: wrap;
+            padding: .1rem;
+            /* 注意如果设置了最小高度 默认内容会使用 align-content:stretch 内容会占满整个高度
+			把内容对齐方式设置为flex-start顶部对齐 */
+			align-content:flex-start;
+            li{
+                width: 33.33%;
+                a{
+                    display: block;
+                    background-color: #fff;
+                    img{
+                        width:100%;
+                    }
+                    p{
+                        font-size: .14rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
