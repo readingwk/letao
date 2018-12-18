@@ -61,8 +61,8 @@ $('.cart-list').on('change','.choose',function(){
   
     var sum=0;
     checkeds.each(function(index,value){
-        var price=$('.choose').data('price');
-        var num=$('.choose').data('num');
+        var price=$(value).data('price');
+        var num=$(value).data('num');
 
         var all=price*num;
         sum+=all;
