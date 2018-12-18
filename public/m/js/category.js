@@ -8,6 +8,14 @@ $(function(){
 
     $.ajax({
         url:'/category/queryTopCategory',
+        beforeSend: function() { // 请求之前会触发的回调函数
+            // 请求之前显示遮罩层
+            $('.mask').show();
+        },
+        complete: function() { // 请求之后会触发函数
+            // 请求之后隐藏遮罩层
+            $('.mask').hide();
+        },
         success:function(data){
 
             var html=template('categoryLeftTpl',data );
@@ -33,6 +41,14 @@ $('.category-left ul').on('tap','li a',function(){
         $.ajax({
 
             url:'/category/querySecondCategory',
+            beforeSend: function() { // 请求之前会触发的回调函数
+                // 请求之前显示遮罩层
+                $('.mask').show();
+            },
+            complete: function() { // 请求之后会触发函数
+                // 请求之后隐藏遮罩层
+                $('.mask').hide();
+            },
             data:{id:id},
             success:function(data){
                 var html=template('categoryRightTpl',data);

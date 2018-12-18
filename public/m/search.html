@@ -42,11 +42,11 @@
                             <span class="mui-badge mui-badge-success fa fa-times"></span>
                         </li>
                         <li class="mui-table-view-cell">Item 1
-                                <span class="mui-badge mui-badge-success fa fa-times"></span>
-                            </li>
-                            <li class="mui-table-view-cell">Item 1
-                                    <span class="mui-badge mui-badge-success fa fa-times"></span>
-                                </li>
+                            <span class="mui-badge mui-badge-success fa fa-times"></span>
+                        </li>
+                        <li class="mui-table-view-cell">Item 1
+                            <span class="mui-badge mui-badge-success fa fa-times"></span>
+                        </li>
                     </ul>
                 </div>
 
@@ -57,33 +57,36 @@
     <footer id="footer">
         <ul>
             <li>
-                <a href="#" class="fa fa-home">
+                <a href="index.html" class="fa fa-home">
                     <span>首页</span>
                 </a>
             </li>
             <li>
-                <a href="#" class="fa fa-bars">
+                <a href="category.html" class="fa fa-bars">
                     <span>分类</span>
                 </a>
             </li>
             <li>
-                <a href="#" class="fa fa-shopping-cart">
+                <a href="cart.html" class="fa fa-shopping-cart">
                     <span>购物车</span>
                 </a>
             </li>
             <li>
-                <a href="#" class="fa fa-user">
+                <a href="user.html" class="fa fa-user">
                     <span>个人中心</span>
                 </a>
             </li>
         </ul>
     </footer>
-
+<!-- mask遮罩层 -->
+<div class="mask">
+    <img src="images/loading.gif" alt="">
+</div>
     <script id="searchHistory" type="text/html">
         {{if rows.length>0}}
         {{each rows value index}}
         <li class="mui-table-view-cell">{{value}}
-                <span class="mui-badge mui-badge-success fa fa-times" data-index="{{index}}"></span>
+                <span class="mui-badge mui-badge-success fa fa-times btn-delete" data-index="{{index}}"></span>
             </li>
     {{/each}}
     {{else}}

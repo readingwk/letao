@@ -1,0 +1,90 @@
+li {
+  list-style: none;
+}
+body {
+  padding: 0.45rem 0;
+  background-color: #fff;
+  height: 100vh;
+}
+img {
+  /* 解决图标3px的问题 */
+  vertical-align: middle;
+}
+#main {
+  height: 100%;
+  position: relative;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+#header {
+  background-color: #006699;
+  height: 0.45rem;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  padding: 0 0.45rem;
+  text-align: center;
+}
+#header h4 {
+  line-height: 0.45rem;
+  font-weight: normal;
+  color: #fff;
+  margin: 0;
+}
+#header form {
+  width: 100%;
+  padding-top: 0.05rem;
+}
+#header form input {
+  background-color: #fff;
+  text-align: left;
+  margin-bottom: 0;
+  font-size: 0.14rem;
+}
+#header a {
+  position: absolute;
+  width: 0.45rem;
+  height: 0.45rem;
+  right: 0;
+  top: 0;
+  text-align: center;
+  line-height: 0.45rem;
+  color: #fff;
+}
+#header a:first-child {
+  left: 0;
+}
+#header a:last-child {
+  right: 0;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #006699;
+  height: 0.45rem;
+  z-index: 999;
+}
+#footer ul {
+  display: flex;
+}
+#footer ul li {
+  width: 25%;
+}
+#footer ul li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.085rem;
+}
+#footer ul li a span {
+  display: block;
+}
+#main .btn-exit {
+  width: 100%;
+}

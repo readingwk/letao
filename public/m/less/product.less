@@ -1,0 +1,69 @@
+@import 'base.less';
+
+
+#main{
+    form{
+        display: flex;
+        padding: .1rem;
+        input{
+            border-radius: 0.06rem 0 0 0.06rem; 
+            border: 1px solid @main-color;
+            margin-bottom: 0;
+            text-align: left;
+            font-size: .14rem;
+            background-color: #fff;
+            flex:1;
+        }
+        button{
+            border-radius: 0 0.06rem 0.06rem 0;
+            width: .6rem;
+            background-color: @main-color;
+            border: 0.01rem solid @main-color;
+        }
+    }
+    .product-list{
+        .list-method{
+            width: 100%;
+            background-color: #eee;
+            line-height: .3rem;
+            ul{
+                display: flex;
+                li{
+                    width: 25%;
+                    &.active{
+                        a{
+                            color: red;
+                        }
+                    }
+                    a{
+                        display: block;
+                        color: #666;
+                        font-size: .14rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .content{
+            padding: .1rem 0;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+              
+                li{
+                    padding: 0.05rem 0.05rem;
+                    width: 50%;
+                  
+                    a{
+                        border: 1px solid #ccc;
+                        display: block;
+                        text-align: center;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

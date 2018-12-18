@@ -18,7 +18,8 @@ $(function(){
 
         historyData.unshift(history);
         localStorage.setItem('searchHistory',JSON.stringify(historyData));
-        queryHistory()
+        queryHistory();
+        location='product.html?search='+history;
         
     })
     queryHistory()
@@ -33,4 +34,27 @@ function queryHistory(){
 
 
     }
+
+
+    $('.mui-table-view').on('tap','.btn-delete',function(){
+
+        var index=$(this).data('index');
+
+        var historyData=JSON.parse(localStorage.getItem('searchHistory'))|| [];
+
+        historyData.splice(index,1);
+
+        localStorage.setItem('searchHistory',JSON.stringify(historyData));
+
+        queryHistory();
+
+
+    })
+
+    $('.btn-clear').on('tap',function(){
+
+        localStorage.removeItem('searchHistory');
+
+        queryHistory();
+    })
 })
